@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('dashboard');
 });
+
+Route::get('/landingpage', 'fronend_controller@index');
+
