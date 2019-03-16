@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Share App </title>
+  <title>Rimak </title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,13 +30,21 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Share App</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">  
+      <div class=" text-center">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rimak</a>
+      </div>
+      
+      {{-- <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      </button> --}}
+
+      {{-- <div class="pull-right" style="float: right;">
+        <img src="{{ URL::asset('img/chat.png') }}" height="50">
+        <img src="{{ URL::asset('img/chat.png') }}" height="50">
+      </div> --}}
+      {{-- <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -45,7 +53,8 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">
+              <img src="{{ URL::asset('img/chat.png') }}" height="50"></a>
           </li>
 
           <div class="dropdown">
@@ -59,90 +68,69 @@
             </div>
           </div>
         </ul>
+
+        <div class="col-md-2 pull-right">
+        <img src="{{ URL::asset('img/chat.png') }}" height="50">
+        <img src="{{ URL::asset('img/chat.png') }}" height="50">
       </div>
+      </div> --}}
     </div>
   </nav>
 
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-      <h1 class="text-uppercase mb-0">Share App</h1>
+      
+      <h1 class="text-uppercase mb-0">RiMak</h1>
       <hr class="star-light">
-      <h2 class="font-weight-light mb-0">“Invest in a share what you can afford to lose.” 
-― Sandeep Sahajpal</h2>
+      <h2 class="font-weight-light mb-0">Buy and share - make your future and increase your earning this small invesment can change your life fay by day.</h2>
     </div>
   </header>
 
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-0">Share Short Details</h2>
       <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </a>
-        </div>
-      </div>
+      <div class="jumbotron">
+      <p class="lead text-center">
+        
+        Project Name: Fashion House<br>
+        Shop Location: Tok O Squre<br>
+        Total Share Fot This Shop: 250<br>
+        Share Available: 150<br>
+        Per share Value: 13,000 tk<br>
+        Project Code: PHOT01
+      
+      </p>
+      <hr class="my-4">
+      
+      <p class="lead text-center">
+        <a class="btn btn-primary btn-lg" href="#" role="button">All Share</a>
+      </p>
+    </div>
+    </div>
+
+    <div class="container">
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Buy Share Now</button>
+      <p class="text-center" style="margin-top: 10px; font-weight: bold;">For More Details</p>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Guest Browse</button>
+      <p class="text-center" style="margin-top: 10px; font-weight: bold;">Or Create An Account</p>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Sign Up</button>
+      <p class="text-center" style="margin-top: 10px; font-weight: bold;">If You Have allready Account </p>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Sign In</button>
     </div>
   </section>
+
+  <div class="container">
+    <div class="jumbotron" style="margin-top: 20px">
+      <h1 class="display-6">Hello, Brother!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and took a galley of type</p>
+      <hr class="my-4">
+     
+    
+    </div>
+  </div>
 
   <!-- About Section -->
   <section class="bg-primary text-white mb-0" id="about">
@@ -169,7 +157,7 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-0">Contact Us</h2>
       <hr class="star-dark mb-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
