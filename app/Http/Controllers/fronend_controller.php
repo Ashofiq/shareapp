@@ -12,6 +12,22 @@ class Fronend_controller extends Controller{
 	}
 
 	public function index(){
-		return view('landingpage');
+		return view('dashboard');
+	}
+
+	public function signin(){
+		return view('frontend/signin');
+	}
+
+	public function signup(){
+		return view('frontend/signup');
+	}
+
+	public function buyshare(){
+		return view('frontend/buyshare');
+	}
+
+	public function guestbrowse(){
+		return view('frontend/guestbrowse');
 	}
 }

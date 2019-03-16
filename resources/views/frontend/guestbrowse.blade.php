@@ -77,67 +77,61 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead bg-primary text-white text-center">
+   <section class="bg-primary text-white mb-0" id="about" style="margin-top: 100px">
     <div class="container">
-      
-      <h1 class="text-uppercase mb-0">RiMak</h1>
-      <hr class="star-light">
-      <h2 class="font-weight-light mb-0">Buy and share - make your future and increase your earning this small invesment can change your life fay by day.</h2>
-    </div>
-  </header>
-
-  <!-- Portfolio Grid Section -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Share Short Details</h2>
-      <hr class="star-dark mb-5">
-      <div class="jumbotron">
-      <p class="lead text-center">
-        
-        Project Name: Fashion House<br>
-        Shop Location: Tok O Squre<br>
-        Total Share Fot This Shop: 250<br>
-        Share Available: 150<br>
-        Per share Value: 13,000 tk<br>
-        Project Code: PHOT01
-      
-      </p>
-      <hr class="my-4">
-      
-      <p class="lead text-center">
-        <a class="btn btn-primary btn-lg" href="#" role="button">All Share</a>
-      </p>
-    </div>
-    </div>
-
-    <div class="container">
-      <a href="{{ URL::to('/buyshare') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Buy Share Now</button></a>
-      <p class="text-center" style="margin-top: 10px; font-weight: bold;">For More Details</p>
-      <a href="{{ URL::to('/guestbrowse') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Guest Browse</button></a>
-      <p class="text-center" style="margin-top: 10px; font-weight: bold;">Or Create An Account</p>
-      <a href="{{ URL::to('/signup') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign Up</button></a>
-      <p class="text-center" style="margin-top: 10px; font-weight: bold;">If You Have allready Account </p>
-      <a href="{{ URL::to('/signin') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign In</button></a>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="jumbotron" style="margin-top: 20px">
-      <h1 class="display-6">Hello, Brother!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and took a galley of type</p>
-      <hr class="my-4">
-     
-    
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
+      <h2 class="text-center text-uppercase text-white">Rules</h2>
       <hr class="star-light mb-5">
       <div class="row">
+
+        <div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+        
         <div class="col-lg-4 ml-auto">
           <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and took a galley of type</p>
         </div>
@@ -146,61 +140,32 @@
         </div>
       </div>
       <div class="text-center mt-4">
+        <p>If you agree with us and want to but share now
+</p>
         <a class="btn btn-xl btn-outline-light" href="#">
-          <i class="fas fa-download mr-2"></i>
-          Download Now!
+          
+          Continue
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <!-- Portfolio Grid Section -->
+  <section class="portfolio" id="portfolio">
+  
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Contact Us</h2>
-      <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-         
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Email Address</label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
+     
+      <p class="text-center" style="margin-top: 10px; font-weight: bold;">Or Create An Account</p>
+      <a href="{{ URL::to('/signup') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign Up</button></a>
+      <p class="text-center" style="margin-top: 10px; font-weight: bold;">If You Have allready Account </p>
+      <a href="{{ URL::to('/signin') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign In</button></a>
     </div>
   </section>
+
+  
+
+  
+
 
   <!-- Footer -->
   <footer class="footer text-center">

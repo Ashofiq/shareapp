@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('landingpage');
 });
 
-Route::get('/landingpage', 'fronend_controller@index');
-
+Route::get('/dashboard', 'fronend_controller@index');
+Route::get('/signin', 'fronend_controller@signin');
+Route::get('/signup', 'fronend_controller@signup');
+Route::get('/buyshare', 'fronend_controller@buyshare');
+Route::get('/guestbrowse', 'fronend_controller@guestbrowse');
