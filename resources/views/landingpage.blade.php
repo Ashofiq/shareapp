@@ -12,11 +12,14 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
@@ -26,13 +29,30 @@
 
 </head>
 
+<script type="text/javascript">
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 300) {
+        //clearHeader, not clearheader - caps H
+        $(".portfolio").addClass("animated zoomIn delay-0.1s");
+    }
+
+    if (scroll >= 700) {
+        //clearHeader, not clearheader - caps H
+        $(".button").addClass("animated bounceInRight delay-0.1s");
+    }
+});
+</script>
+
 <body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">  
       <div class=" text-center">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rimak</a>
+        <a class="navbar-brand js-scroll-trigger animated bounce delay-0.1s" href="#page-top">Rimak</a>
       </div>
       
       {{-- <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,6 +94,10 @@
         <img src="{{ URL::asset('img/chat.png') }}" height="50">
       </div>
       </div> --}}
+      <div class="pull-right">
+        <a href=""><img src="{{ URL::asset('img/admin-with-cogwheels.png') }}" height="30" style="margin-right: 10px"></a>
+        <img src="{{ URL::asset('img/chat.png') }}" height="30">
+      </div>
     </div>
   </nav>
 
@@ -88,7 +112,7 @@
   </header>
 
   <!-- Portfolio Grid Section -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio " id="portfolio">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Share Short Details</h2>
       <hr class="star-dark mb-5">
@@ -111,7 +135,7 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="button container">
       <a href="{{ URL::to('/buyshare') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Buy Share Now</button></a>
       <p class="text-center" style="margin-top: 10px; font-weight: bold;">For More Details</p>
       <a href="{{ URL::to('/guestbrowse') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Guest Browse</button></a>
@@ -123,17 +147,30 @@
   </section>
 
   <div class="container">
-    <div class="jumbotron" style="margin-top: 20px">
-      <h1 class="display-6">Hello, Brother!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and took a galley of type</p>
-      <hr class="my-4">
-     
-    
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h5 class="border-bottom border-gray pb-2 mb-0">Why You Invest Us?</h5>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray" style="font-size: 110%">
+        {{-- <strong class="d-block text-gray-dark">@Question no One</strong> --}}
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
     </div>
+  </div>        
+</div>
   </div>
 
   <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
+  <section class="bg-primary text-white mb-0" id="about" style="margin-top: 30px">
     <div class="container">
       <h2 class="text-center text-uppercase text-white">About</h2>
       <hr class="star-light mb-5">
@@ -411,6 +448,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+   <script type="text/javascript" src="cssanimation-gsap.js"></script>
 
 </body>
 
