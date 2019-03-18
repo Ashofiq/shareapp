@@ -12,11 +12,14 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
@@ -26,13 +29,32 @@
 
 </head>
 
+<script type="text/javascript">
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 300) {
+        //clearHeader, not clearheader - caps H
+        $(".portfolio").addClass("animated zoomIn delay-0.1s");
+    }
+
+    if (scroll >= 700) {
+        //clearHeader, not clearheader - caps H
+        $(".button").addClass("animated bounceInRight delay-0.1s");
+    }
+
+    
+});
+</script>
+
 <body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">  
       <div class=" text-center">
-        <a class="navbar-brand js-scroll-trigger" href="{{ URL::TO('/') }}">Rimak</a>
+        <a class="navbar-brand js-scroll-trigger animated infinite slow  bounce delay-2s" href="{{URL::TO('/')}}">Rimak</a>
       </div>
       
       {{-- <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,6 +96,10 @@
         <img src="{{ URL::asset('img/chat.png') }}" height="50">
       </div>
       </div> --}}
+      <div class="pull-right">
+        <a href="#"><img src="{{ URL::asset('img/admin-with-cogwheels.png') }}" height="30" style="margin-right: 10px"></a>
+        <a href="#"><img src="{{ URL::asset('img/chat.png') }}" height="30"></a>
+      </div>
     </div>
   </nav>
 

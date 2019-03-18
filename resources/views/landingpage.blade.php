@@ -26,6 +26,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
@@ -46,13 +47,18 @@
 });
 </script>
 
+<style type="text/css">
+  .btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)}
+.btn-grad:hover { background-position: right center; }
+</style>
+
 <body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">  
       <div class=" text-center">
-        <a class="navbar-brand js-scroll-trigger animated bounce delay-0.1s" href="#page-top">Rimak</a>
+        <a class="navbar-brand js-scroll-trigger animated infinite slow  bounce delay-2s" href="{{URL::TO('/')}}">Rimak</a>
       </div>
       
       {{-- <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,14 +101,14 @@
       </div>
       </div> --}}
       <div class="pull-right">
-        <a href=""><img src="{{ URL::asset('img/admin-with-cogwheels.png') }}" height="30" style="margin-right: 10px"></a>
-        <img src="{{ URL::asset('img/chat.png') }}" height="30">
+        <a href="#"><img src="{{ URL::asset('img/admin-with-cogwheels.png') }}" height="30" style="margin-right: 10px"></a>
+        <a href="#"><img src="{{ URL::asset('img/chat.png') }}" height="30"></a>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
-  <header class="masthead bg-primary text-white text-center">
+  <header class="masthead bg-primary text-white text-center" style="border-radius: 0px 0px 0px 200px; background-image: linear-gradient(to right, #66ffe0, #18bc9c);">
     <div class="container">
       
       <h1 class="text-uppercase mb-0">RiMak</h1>
@@ -112,30 +118,49 @@
   </header>
 
   <!-- Portfolio Grid Section -->
-  <section class="portfolio " id="portfolio">
+  <section class="portfolio " id="portfolio" style="background-color: #010E1E !important; border-radius: 200px 0px 0px 0px;">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Share Short Details</h2>
+      <h2 class="text-center text-uppercase  mb-0" style="color: white">Share Short Details</h2>
       <hr class="star-dark mb-5">
-      <div class="jumbotron">
-      <p class="lead text-center">
-        
-        Project Name: Fashion House<br>
-        Shop Location: Tok O Squre<br>
-        Total Share Fot This Shop: 250<br>
-        Share Available: 150<br>
-        Per share Value: 13,000 tk<br>
-        Project Code: PHOT01
-      
-      </p>
-      <hr class="my-4">
-      
-      <p class="lead text-center">
-        <a class="btn btn-primary btn-lg" href="#" role="button">All Share</a>
-      </p>
-    </div>
-    </div>
 
-    <div class="button container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="border-radius:5px">
+            <div class="card-body">
+              <h5 class="card-title">Project Name: Fashion House</h5>
+              <p class="card-text">
+                Shop Location: Tok O Squre<br>
+                Total Share Fot This Shop: 250<br>
+                Share Available: 150<br>
+                Per share Value: 13,000 tk<br>
+                Project Code: PHOT01</p>
+              <a href="#" class="btn btn-primary">All Share</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Project Name: Fashion House</h5>
+              <p class="card-text">
+                Shop Location: Tok O Squre<br>
+                Total Share Fot This Shop: 250<br>
+                Share Available: 150<br>
+                Per share Value: 13,000 tk<br>
+                Project Code: PHOT01</p>
+              <a href="#" class="btn btn-primary">All Share</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="col-md-12">
+    <center>
+    <div class="container">
+    <div class="col-md-6">
+      <div class="button container" style="margin-top: 100px">
       <a href="{{ URL::to('/buyshare') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Buy Share Now</button></a>
       <p class="text-center" style="margin-top: 10px; font-weight: bold;">For More Details</p>
       <a href="{{ URL::to('/guestbrowse') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Guest Browse</button></a>
@@ -144,9 +169,13 @@
       <p class="text-center" style="margin-top: 10px; font-weight: bold;">If You Have allready Account </p>
       <a href="{{ URL::to('/signin') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign In</button></a>
     </div>
-  </section>
+    </div>
+    </center>
+  </div>
+  </div>
 
-  <div class="container">
+
+  <div class="container" style="margin-top: 100px">
     <div class="my-3 p-3 bg-white rounded shadow-sm">
     <h5 class="border-bottom border-gray pb-2 mb-0">Why You Invest Us?</h5>
     <div class="media text-muted pt-3">
@@ -170,7 +199,7 @@
   </div>
 
   <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about" style="margin-top: 30px">
+  <section class="bg-primary text-white mb-0" id="about" style="margin-top: 30px; background-image: linear-gradient(to right, #66ffe0, #18bc9c);">
     <div class="container">
       <h2 class="text-center text-uppercase text-white">About</h2>
       <hr class="star-light mb-5">
@@ -182,14 +211,28 @@
           <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and! took a galley of type</p>
         </div>
       </div>
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="#">
-          <i class="fas fa-download mr-2"></i>
-          Download Now!
-        </a>
-      </div>
+     
     </div>
   </section>
+  
+  {{-- Appp  --}}
+    <div style="background-color: #010E1E !important; border-radius: 1000px 0px 0px 0px;">
+    <div class="container">
+      <div class="row" >
+      <div class="col-md-6 pull-left">
+        <img class = "img-responsive" src="{{URL::asset('img/app.jpg')}}" width="380">
+      </div>
+
+      <div class="col-md-6 pull-right" style="color: white; font-family: inherit; margin-top: 50px; margin-bottom: 50px">
+        <h4 style="font-size: 200%">Download the Mobile App</h4>
+        <p style="font-size: 120%">Ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ extra-small dolore magna aliqua.</p>
+        <div class="btn" style="background-color: #DB162F; color: white; margin-right: 5px"> <i class="fa fa-android fa-lg" aria-hidden="true"></i>  Google Play</div>
+
+        <div class="btn" style="background-color: #DB162F; color: white"> <i class="fa fa-apple fa-lg" aria-hidden="true"></i>  App Store</div>
+      </div>
+    </div>
+    </div>
+  </div>
 
   <!-- Contact Section -->
   <section id="contact">
