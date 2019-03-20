@@ -2,12 +2,11 @@
  <html lang="en">
 
  <head>
-<!-- Original URL: http://slimhamdi.net/bayya/register.html
-Date Downloaded: 3/20/2019 2:36:25 AM !-->
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
      <meta charset="utf-8" />
-     <title>Rimak</title>
+     <title>Rimak | Sign Up</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
      <!-- Favicon -->

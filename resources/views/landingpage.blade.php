@@ -150,7 +150,7 @@
                              <div class="slider-text text-center">
                                  <h3 class="slide-title"><span>Secure </span> and  <span>Easy Way </span><br /> To Share </h3>
                                  <p>
-                                     <a href="about.html" class="slider btn btn-primary">Learn more </a>
+                                     <a href="{{URL::to('/guestbrowse')}}" class="slider btn btn-primary">Learn more </a>
                                  </p>
                              </div>
                          </div>
@@ -165,7 +165,7 @@
                                  <div class="slider-text text-center">
                                      <h3 class="slide-title"><span>Share </span> Exchange  <br />You can  <span>Trust </span>  </h3>
                                      <p>
-                                         <a href="pricing.html" class="slider btn btn-primary">our prices </a>
+                                         <a href="{{URL::to('/guestbrowse')}}" class="slider btn btn-primary">Learn More </a>
                                      </p>
                                  </div>
                              </div>
