@@ -1,145 +1,152 @@
 <!DOCTYPE html>
  <html lang="en">
-     <head>
 
+ <head>
+<!-- Original URL: http://slimhamdi.net/bayya/register.html
+Date Downloaded: 3/20/2019 2:36:25 AM !-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-         <meta charset="utf-8" />
-         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
-         <title>Rimak Sign Up</title>
-         <link href="../../dist/css/style.css" rel="stylesheet" />
-         <!-- This page CSS -->
-         <link href="../../dist/css/pages/authentication.css" rel="stylesheet" />
-       
-     </head>
-     <body>
-         <div class="main-wrapper">
-             <!-- ============================================================== -->
-             <!-- Preloader - style you can find in spinners.css -->
-             <!-- ============================================================== -->
-             <div class="preloader">
-                 <div class="loader">
-                     <div class="loader__figure"></div>
-                     <p class="loader__label">Rimak Sign Up</p>
-                 </div>
-             </div>
-             <!-- ============================================================== -->
-             <!-- Preloader - style you can find in spinners.css -->
-             <!-- ============================================================== -->
-             <!-- ============================================================== -->
-             <!-- Login box.scss -->
-             <!-- ============================================================== -->
-             <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(../../assets/images/big/auth-bg2.jpg) no-repeat left center;">
-                 <div class="container">
-                     <div class="row">
-                         <div class="col s12 l8 m6 demo-text">
-                             <span class="db"><img src="../../assets/images/logo-icon.png" alt="logo" /></span>
-                             <span class="db font-medium black-text">Rimak</span>
-                             <h1 class="font-light m-t-40">Welcome to the  <span class="font-medium black-text">Rimak </span></h1>
-                             <p>This is just a ____ text which you can ______ as per your requeirment, __ change once you get ______. this is default text. </p>
-                             {{-- <a class="btn btn-round red m-t-5">Know more </a> --}}
-                         </div>
-                     </div>
-                     <div class="auth-box auth-sidebar">
-                         <div id="loginform">
-                             <div class="p-l-10">
-                                 <h5 class="font-medium m-b-0 m-t-40">Rimak Sign Up</h5>
-                                 <small>Just login to your _______ </small>
-                             </div>
-                             <!-- Form -->
-                             <div class="row">
-                                 <form class="col s12" action="index.html">
-                                     <!-- email -->
-                                     <div class="row">
-                                         <div class="input-field col s12">
-                                             <input id="name" type="text" class="validate" required="" />
-                                             <label for="name">Name </label>
-                                         </div>
-                                     </div>
-                                     <!-- email -->
-                                     <div class="row">
-                                         <div class="input-field col s12">
-                                             <input id="email" type="email" class="validate" required="" />
-                                             <label for="email">Email </label>
-                                         </div>
-                                     </div>
-                                     <!-- pwd -->
-                                     <div class="row">
-                                         <div class="input-field col s12">
-                                             <input id="password" type="password" class="validate" required="" />
-                                             <label for="password">Password </label>
-                                         </div>
-                                     </div>
-                                     <!-- pwd -->
-                                     <div class="row">
-                                         <div class="input-field col s12">
-                                             <input id="cpassword" type="password" class="validate" required="" />
-                                             <label for="cpassword">Password </label>
-                                         </div>
-                                     </div>
 
-                                     <div class="row">
-                                         <div class="input-field col s12">
-                                             <input id="cpassword" type="password" class="validate" required="" />
-                                             <label for="cpassword">Password </label>
-                                         </div>
-                                     </div>
+     <meta charset="utf-8" />
+     <title>Rimak</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="images/favicon.png" />
 
-                                     
-                                     <!-- pwd -->
-                                     <div class="row m-t-5">
-                                         <div class="col s7">
-                                             <label>
-                                                 <input type="checkbox" />
-                                                 <span>Agree to all Terms </span>
-                                             </label>
-                                         </div>
-                                     </div>
-                                     <!-- pwd -->
-                                     <div class="row m-t-40">
-                                         <div class="col s12">
-                                             <button class="btn-large w100 red" type="submit">Sign Up </button>
-                                         </div>
-                                     </div>
-                                 </form>
-                             </div>
-                             <div class="center-align m-t-20 db">
-                                Already have __ account?  <a href="authentication-login2.html">Sign in! </a>
+     <!-- Template CSS Files -->
+     <link rel="stylesheet" href="css/font-awesome.min.css" />
+     <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="css/magnific-popup.css" />
+     <link rel="stylesheet" href="css/select2.min.css" />
+     <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="css/skins/orange.css" />
+    
+     <!-- Live Style Switcher - demo only -->
+     <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+     <!-- Template JS Files -->
+     <script src="js/modernizr.js"></script>
+
+ </head>
+
+ <body class="auth-page">
+     
+    
+     <div class="wrapper">
+         <div class="container-fluid user-auth">
+             <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+                 <!-- Logo Starts -->
+                 <a class="logo" href="index.html">
+                     <!-- <img id="logo-user" class="img-responsive" src="images/logo-dark.png" alt="logo" /> -->
+                 </a>
+                 <!-- Logo Ends -->
+                 <!-- Slider Starts -->
+                 <div id="carousel-testimonials" class="carousel slide carousel-fade" data-ride="carousel">
+                     <!-- Indicators Starts -->
+                     <ol class="carousel-indicators">
+                         <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                         <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                         <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                     </ol>
+                     <!-- Indicators Ends -->
+                     <!-- Carousel Inner Starts -->
+                     <div class="carousel-inner">
+                         <!-- Carousel Item Starts -->
+                         <div class="item active item-1" style="background-image: url(img/backgrounds/bg-user.jpg);">
+                             <div>
+                                 <blockquote>
+                                     <p>This is a realistic _______ for anyone looking for ____ to invest. Paid to __ regularly, keep up good ____! </p>
+                                     <footer><span>Lucy Smith </span>, England </footer>
+                                 </blockquote>
                              </div>
                          </div>
+                         <!-- Carousel Item Ends -->
+                         <!-- Carousel Item Starts -->
+                         <div class="item item-2" style="background-image: url(img/backgrounds/bg-user2.jpg);">
+                             <div>
+                                 <blockquote>
+                                     <p>Rimak doubled in 7 ____. You should not expect ________ more. Excellent customer service! </p>
+                                     <footer><span>Slim Hamdi </span>, Tunisia </footer>
+                                 </blockquote>
+                             </div>
+                         </div>
+                         <!-- Carousel Item Ends -->
+                         <!-- Carousel Item Starts -->
+                         <div class="item item-3">
+                             <div>
+                                 <blockquote>
+                                     <p>My family and me ____ to thank you for _______ us find a great ___________ to make money online. ____ happy with how things ___ going! </p>
+                                     <footer><span>Dalel Boubaker </span>, Russia </footer>
+                                 </blockquote>
+                             </div>
+                         </div>
+                         <!-- Carousel Item Ends -->
+                     </div>
+                     <!-- Carousel Inner Ends -->
+                 </div>
+                 <!-- Slider Ends -->
+             </div>
+             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                 <!-- Logo Starts -->
+                 <a class="visible-xs" href="index.html">
+                     <img id="logo" class="img-responsive mobile-logo" src="images/logo-dark.png" alt="logo" />
+                 </a>
+                 <!-- Logo Ends -->
+                 <div class="form-container">
+                     <div>
+                         <!-- Section Title Starts -->
+                         <div class="row text-center">
+                             <h2 class="title-head hidden-xs">get  <span>started </span></h2>
+                              <p class="info-form">Open account for free ___ start now! </p>
+                         </div>
+                         <!-- Section Title Ends -->
+                         <!-- Form Starts -->
+                         <form>
+                             <!-- Input Field Starts -->
+                             <div class="form-group">
+                                 <input class="form-control" name="name" id="name" placeholder="NAME" type="text" required="" />
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Input Field Starts -->
+                             <div class="form-group">
+                                 <input class="form-control" name="email" id="email" placeholder="EMAIL" type="email" required="" />
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Input Field Starts -->
+                             <div class="form-group">
+                                 <input class="form-control" name="password" id="password" placeholder="PASSWORD" type="password" required="" />
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Submit Form Button Starts -->
+                             <div class="form-group">
+                                 <button class="btn btn-primary" type="submit">create account </button>
+                                 <p class="text-center" />already have an account ?  <a href="{{URL::to('/signin')}}">Login </a>
+                             </div>
+                             <!-- Submit Form Button Ends -->
+                         </form>
+                         <!-- Form Ends -->
                      </div>
                  </div>
+                 <!-- Copyright Text Starts -->
+                 <p class="text-center copyright-text">Copyright © 2019 All Rights Reserved </p>
+                 <!-- Copyright Text Ends -->
              </div>
-             <!-- ============================================================== -->
-             <!-- Login box.scss -->
-             <!-- ============================================================== -->
-             <!-- ============================================================== -->
-             <!-- Page wrapper scss in scafholding.scss -->
-             <!-- ============================================================== -->
-             <!-- ============================================================== -->
-             <!-- Page wrapper scss in scafholding.scss -->
-             <!-- ============================================================== -->
-             <!-- ============================================================== -->
-             <!-- Right Sidebar -->
-             <!-- ============================================================== -->
-             <!-- ============================================================== -->
-             <!-- Right Sidebar -->
-             <!-- ============================================================== -->
          </div>
-         <!-- ============================================================== -->
-         <!-- All Required js -->
-         <!-- ============================================================== -->
-         <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
-         <script src="../../dist/js/materialize.min.js"></script>
-         <!-- ============================================================== -->
-         <!-- This page plugin js -->
-         <!-- ============================================================== -->
-         <script>
-        $(function() {
-        $(".preloader").fadeOut();
-        });
-        </script>
-     </body>
+         <!-- Template JS Files -->
+         <script src="js/jquery-2.2.4.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/select2.min.js"></script>
+         <script src="js/jquery.magnific-popup.min.js"></script>
+         <script src="js/custom.js"></script>
+        
+         <!-- Live Style Switcher JS File - only demo -->
+         <script src="js/styleswitcher.js"></script>
+
+     </div>
+     <!-- Wrapper Ends -->
+ </body>
+
  </html>

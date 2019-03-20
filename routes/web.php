@@ -18,5 +18,8 @@ Route::get('/', function () {
 Route::get('/dashboard', 'fronend_controller@index');
 Route::get('/signin', 'fronend_controller@signin');
 Route::get('/signup', 'fronend_controller@signup');
+Route::get('/about', 'fronend_controller@about');
+Route::get('/contact', 'fronend_controller@contact');
+Route::get('/guestbrowse', 'fronend_controller@guestbrowse');
 Route::get('/buyshare', 'fronend_controller@buyshare');
 Route::get('/guestbrowse', 'fronend_controller@guestbrowse');

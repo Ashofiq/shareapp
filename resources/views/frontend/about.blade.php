@@ -131,87 +131,61 @@
              </nav>
              <!-- Navigation Menu Ends -->
          </header>
-         <!-- Header Ends -->
-     <!-- Banner Area Starts -->
-     <section class="banner-area" style="background-image: url(img/backgrounds/bg-banner.jpg);">
-       <div class="banner-overlay">
-         <div class="banner-text text-center">
-           <div class="container">
-             <!-- Section Title Starts -->
-             <div class="row text-center">
-               <div class="col-xs-12">
-                 <!-- Title Starts -->
-                 <h2 class="title-head">  <span>Guest Browse </span></h2>
-                 <!-- Title Ends -->
-                 <hr />
-                 <!-- Breadcrumb Starts -->
-                 <ul class="breadcrumb">
-                   <li><a href="{{URL::to('/')}}"> home </a></li>
-                   <li>Guest browse </li>
-                 </ul>
-                 <!-- Breadcrumb Ends -->
-               </div>
+
+        <section class="banner-area" style="background-image: url(img/backgrounds/bg-banner.jpg);">
+             <div class="banner-overlay">
+                 <div class="banner-text text-center">
+                     <div class="container">
+                         <!-- Section Title Starts -->
+                         <div class="row text-center">
+                             <div class="col-xs-12">
+                                 <!-- Title Starts -->
+                                 <h2 class="title-head">About  <span>Us </span></h2>
+                                 <!-- Title Ends -->
+                                 <hr>
+                                 <!-- Breadcrumb Starts -->
+                                 <ul class="breadcrumb">
+                                     <li><a href="{{URL::to('/')}}"> home </a></li>
+                                     <li>About </li>
+                                 </ul>
+                                 <!-- Breadcrumb Ends -->
+                             </div>
+                         </div>
+                         <!-- Section Title Ends -->
+                     </div>
+                 </div>
              </div>
-             <!-- Section Title Ends -->
-           </div>
-         </div>
-       </div>
-     </section>
-     <!-- Banner Area Ends -->
-     <!-- Section Services Starts -->
-         <section class="services">
-       <div class="container">
+         </section>
 
-         <div class="row">
-           <!-- Service Box Starts -->
-                    <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Question No One </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
+            <div class="container">
+                 <!-- Section Title Starts -->
+                 <div class="row text-center">
+                     <h2 class="title-head">About  <span>Us </span></h2>
+                     <div class="title-head-subtitle">
+                         <p>a commercial website that _____ wallets, exchanges and other _______ related info </p>
                      </div>
-
-
-                     <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Share Investment </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
+                 </div>
+                 <!-- Section Title Ends -->
+                 <!-- Section Content Starts -->
+                 <div class="row about-content">
+                     <!-- Image Starts -->
+                     <div class="col-sm-12 col-md-5 col-lg-6 text-center">
+                         <img id="about-us" class="img-responsive img-about-us" src="img/about-us.png" alt="about us" />
                      </div>
-
-
-                     <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Share Investment </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
+                     <!-- Image Ends -->
+                     <!-- Content Starts -->
+                     <div class="col-sm-12 col-md-7 col-lg-6">
+                         <h3 class="title-about">WE ARE Rimak </h3>
+                         <p class="about-text">A place for everyone ___ wants to simply buy ___ sell Share. Deposit funds _____  Instant buy/sell of Share __ fair price is guaranteed. _______ extra. Join over 700,000 _____ from all over the _____ satisfied with our services. </p>
+                        
+                         <br><br>
+                         <a class="btn btn-primary" href="about.html">Read More </a>
                      </div>
-
-
-                     <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Share Investment </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
-                     </div>   
-         </div>
-       </div>
-     </section>
-     <!-- Section Services Ends -->
-         <!-- Call To Action Section Starts -->
-         <section class="call-action-all" style="background: url(img/backgrounds/call-to-action-bg.jpg);">
+                     <!-- Content Ends -->
+                 </div>
+                 <!-- Section Content Ends -->
+             </div>
+            <section class="call-action-all" style="background: url(img/backgrounds/call-to-action-bg.jpg);">
        <div class="call-action-all-overlay">
          <div class="container">
            <div class="row">
@@ -219,7 +193,7 @@
                <!-- Call To Action Text Starts -->
                <div class="action-text">
                  <h2>Get Started Today With _______ </h2>
-                 <p class="lead">Open account for free ___ start trading Shares! </p>
+                 <p class="lead">Open account for free ___ start trading Rimak! </p>
                </div>
                <!-- Call To Action Text Ends -->
                <!-- Call To Action Button Starts -->
@@ -231,7 +205,8 @@
        </div>
          </section>
          <!-- Call To Action Section Ends -->
-       <section class="contact">
+         <!-- Footer Starts -->
+         <section class="contact">
              <div class="container">
                  <div class="row">
                      <div class="col-xs-12 col-md-8 contact-form">

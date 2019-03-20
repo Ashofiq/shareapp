@@ -30,4 +30,14 @@ class Fronend_controller extends Controller{
 	public function guestbrowse(){
 		return view('frontend/guestbrowse');
 	}
+
+	public function about(){
+		return view('frontend/about');
+	}
+
+	public function contact(){
+		return view('frontend/contact');
+	}
+
+	
 }

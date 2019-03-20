@@ -1,387 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
-<head>
+ <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <title>Rimak </title>
+     <meta charset="utf-8" />
+     <title>Rimak | home </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="img/favicon.png" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
-
-</head>
-
-<script type="text/javascript">
-  $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-     //>=, not <=
-    if (scroll >= 300) {
-        //clearHeader, not clearheader - caps H
-        $(".portfolio").addClass("animated zoomIn delay-0.1s");
-    }
-
-    if (scroll >= 700) {
-        //clearHeader, not clearheader - caps H
-        $(".button").addClass("animated bounceInRight delay-0.1s");
-    }
-});
-</script>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-    <div class="container">  
-      <div class=" text-center">
-        <a class="navbar-brand js-scroll-trigger animated infinite slow  bounce delay-2s" href="{{URL::TO('/')}}">Rimak</a>
-      </div>
-      
-      {{-- <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button> --}}
-
-      {{-- <div class="pull-right" style="float: right;">
-        <img src="{{ URL::asset('img/chat.png') }}" height="50">
-        <img src="{{ URL::asset('img/chat.png') }}" height="50">
-      </div> --}}
-      {{-- <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">
-              <img src="{{ URL::asset('img/chat.png') }}" height="50"></a>
-          </li>
-
-          <div class="dropdown">
-            <button class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Login
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button"><a class="nav-link" href="#">Login</a></button>
-              <button class="dropdown-item" type="button"><a class="nav-link" href="#">Registration</a></button>
-              
-            </div>
-          </div>
-        </ul>
-
-        <div class="col-md-2 pull-right">
-        <img src="{{ URL::asset('img/chat.png') }}" height="50">
-        <img src="{{ URL::asset('img/chat.png') }}" height="50">
-      </div>
-      </div> --}}
-      <div class="pull-right">
-        <a href="#"><img src="{{ URL::asset('img/admin-with-cogwheels.png') }}" height="30" style="margin-right: 10px"></a>
-        <a href="#"><img src="{{ URL::asset('img/chat.png') }}" height="30"></a>
-      </div>
-    </div>
-  </nav>
-
-
-
-<div class="container" style="margin-top: 150px">
-
-  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm" style="background-color: #6f42c1">
-    <img class="mr-3" src="{{URL::asset('img/edit.png')}}" alt="" width="48" height="48">
-    <div class="lh-100">
-      <h6 class="mb-0 text-white lh-100">Rules</h6>
-      <small>And ans </small>
-    </div>
-  </div>
-
+     <!-- Template CSS Files -->
+     <link rel="stylesheet" href="css/font-awesome.min.css" />
+     <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="css/magnific-popup.css" />
+     <link rel="stylesheet" href="css/select2.min.css" />
+     <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/skins/orange.css" />
   
-  <div class="my-3 p-3 bg-white rounded shadow-sm">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Question And Ans</h6>
-    <div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <strong class="d-block text-gray-dark">@Question no One</strong>
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"></rect><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <strong class="d-block text-gray-dark">@Question no One</strong>
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"></rect><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <strong class="d-block text-gray-dark">@Question no One</strong>
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    {{-- <small class="d-block text-right mt-3">
-      <a href="#">All updates</a>
-    </small> --}}
-  </div>    
-        <div class="text-center mt-4">
-          <h5>If you agree with us and want to but share now</h5>
-          <a class="btn btn-xl btn-outline-primary" href="#">
-            
-            Continue
-          </a>
-        </div>
+   <!-- Live Style Switcher - demo only -->
+     <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
 
-</div>
+     <!-- Template JS Files -->
+     <script src="js/modernizr.js"></script>
 
-  <!-- Portfolio Grid Section -->
-  <section class="portfolio" id="portfolio">
-  
-    <div class="container">
-     
-      <p class="text-center" style="margin-top: 10px; font-weight: bold;">For More Details</p>
-      <a href="{{ URL::to('/guestbrowse') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Guest Browse</button></a>
-      <p class="text-center" style="margin-top: 10px; font-weight: bold;">Or Create An Account</p>
-      <a href="{{ URL::to('/signup') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign Up</button></a>
-      <p class="text-center" style="margin-top: 10px; font-weight: bold;">If You Have allready Account </p>
-      <a href="{{ URL::to('/signin') }}"><button type="button" class="btn btn-secondary btn-lg btn-block">Sign In</button></a>
-    </div>
-  </section>
+ </head>
 
-  
+ <body>
+    
+     <div class="wrapper">
+         <!-- Header Starts -->
+         <header class="header">
+             <div class="container">
+                 <div class="row">
+                     <!-- Logo Starts -->
+                     <div class="main-logo col-xs-12 col-md-3 col-md-2 col-lg-2 hidden-xs">
+                         <a href="{{URL::to('/')}}">
+               <!-- <img id="logo" class="img-responsive" src="img/logo-dark.png" alt="logo" /> -->
+                             <span style="font-size: 170%"><b>RIMAK</b></span>
+             </a>
+                     </div>
+                     <!-- Logo Ends -->
+                     <!-- Statistics Starts -->
+                     <div class="col-md-7 col-lg-7">
+                         <ul class="unstyled bitcoin-stats text-center">
+                             <li>
+                                 <h6>9,450 USD </h6><span>Last Share price </span></li>
+                             <li>
+                                 <h6>+5.26% </h6><span>24 hour price </span></li>
+                             <li>
+                                 <h6>12</h6><span>Total Share </span></li>
+                             <li>
+                                 <h6>2,231,775 </h6><span>active User </span></li>
+                            <!--  <li>
+                                 <div class="btcwdgt-price" data-bw-theme="light" data-bw-cur="usd"></div>
+                                 <span>Live Bitcoin price </span>
+               </li> -->
+                         </ul>
+                     </div>
+                     <!-- Statistics Ends -->
+                     <!-- User Sign In/Sign Up Starts -->
+                     <div class="col-md-3 col-lg-3">
+                         <ul class="unstyled user">
+                         <li class="sign-in"><a href="{{URL::to('/signin')}}" class="btn btn-primary"><i class="fa fa-user"></i> sign in </a></li>
+                             <li class="sign-up"><a href="{{URL::to('/signup')}}" class="btn btn-primary"><i class="fa fa-user-plus"></i> register </a></li>
+                         </ul>
+                     </div>
+                     <!-- User Sign In/Sign Up Ends -->
+                 </div>
+             </div>
+             <!-- Navigation Menu Starts -->
+             <nav class="site-navigation navigation" id="site-navigation">
+                 <div class="container">
+                     <div class="site-nav-inner">
+                         <!-- Logo For ONLY Mobile display Starts -->
+                         <a class="logo-mobile" href="index.html">
+               <img id="logo-mobile" class="img-responsive" src="img/logo-dark.png" alt="" />
+             </a>
+                         <!-- Logo For ONLY Mobile display Ends -->
+                         <!-- Toggle Icon for Mobile Starts -->
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="sr-only">Toggle navigation </span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+                         <!-- Toggle Icon for Mobile Ends -->
+                         <div class="collapse navbar-collapse navbar-responsive-collapse">
+                             <!-- Main Menu Starts -->
+                             <ul class="nav navbar-nav">
+                                 <li class="active"><a href="{{URL::to('/')}}">Home </a></li>
+                                 <li><a href="{{URL::to('/about')}}">About Us </a></li>
+                               
+                                <!--  <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">pages  <i class="fa fa-angle-down"></i></a>
+                                     <ul class="dropdown-menu" role="menu">
+                                         <li><a href="register.html">Register page </a></li>
+                                         <li><a href="login.html">Login page </a></li>
+                     <li><a href="shopping-cart.html">Shopping cart </a></li>
+                                         <li><a href="shopping-checkout.html">shopping checkout </a></li>
+                                         <li><a href="faq.html">FAQ page </a></li>
+                                         <li><a href="404.html">404 Page </a></li>
+                     <li><a href="503.html">Server Error Page </a></li>
+                                         <li><a href="terms-of-services.html">Terms of Services </a></li>
+                     <li><a href="coming-soon.html">Coming Soon </a></li>
+                                     </ul>
+                                 </li> -->
+                                 <li><a href="{{URL::to('/contact')}}">Contact </a></li>
+                
+                                 <li class="search"><button class="fa fa-search"></button></li>
+                                 <!-- Search Icon Ends -->
+                             </ul>
+                             <!-- Main Menu Ends -->
+                         </div>
+                     </div>
+                 </div>
+                 <!-- Search Input Starts -->
+                 <div class="site-search">
+                     <div class="container">
+                         <input type="text" placeholder="type your keyword and hit enter ..." />
+                         <span class="close">× </span>
+                     </div>
+                 </div>
+                 <!-- Search Input Ends -->
+             </nav>
+             <!-- Navigation Menu Ends -->
+         </header>
+         <!-- Header Ends -->
+     <!-- Banner Area Starts -->
+     <section class="banner-area" style="background-image: url(img/backgrounds/bg-banner.jpg);">
+       <div class="banner-overlay">
+         <div class="banner-text text-center">
+           <div class="container">
+             <!-- Section Title Starts -->
+             <div class="row text-center">
+               <div class="col-xs-12">
+                 <!-- Title Starts -->
+                 <h2 class="title-head">  <span>Buy Share Rules </span></h2>
+                 <!-- Title Ends -->
+                 <hr />
+                 <!-- Breadcrumb Starts -->
+                 <ul class="breadcrumb">
+                   <li><a href="{{URL::to('/')}}"> home </a></li>
+                   <li>Buy Share </li>
+                 </ul>
+                 <!-- Breadcrumb Ends -->
+               </div>
+             </div>
+             <!-- Section Title Ends -->
+           </div>
+         </div>
+       </div>
+     </section>
+     <!-- Banner Area Ends -->
+     <!-- Section Services Starts -->
+         <section class="services">
+       <div class="container">
+         <div class="row">
+           <!-- Service Box Starts -->
+           <div class="col-md-6 service-box">
+                         <div>
+                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
+                             <div class="service-box-content">
+                                 <h3>Share Investment </h3>
+                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
+                             </div>
+                         </div>
+                     </div>
 
-  
+                     <div class="col-md-6 service-box">
+                         <div>
+                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
+                             <div class="service-box-content">
+                                 <h3>Share Investment </h3>
+                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
+                             </div>
+                         </div>
+                     </div>
 
+                     <div class="col-md-6 service-box">
+                         <div>
+                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
+                             <div class="service-box-content">
+                                 <h3>Share Investment </h3>
+                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
+                             </div>
+                         </div>
+                     </div>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">1230 dhaka, bangladesh
-            <br>Share App, MO 65243</p>
-        </div>
-        <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="text-uppercase mb-4">About Share App</h4>
-          <p class="lead mb-0">Lorem Ipsum is simply dummy text of the printing and
-            <a href="#about">More</a>.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+                     <div class="col-md-6 service-box">
+                         <div>
+                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
+                             <div class="service-box-content">
+                                 <h3>Share Investment </h3>
+                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
+                             </div>
+                         </div>
+                     </div>
+         </div>
+       </div>
+     </section>
+     <!-- Section Services Ends -->
+         <!-- Call To Action Section Starts -->
+         <section class="call-action-all" style="background: url(img/backgrounds/call-to-action-bg.jpg);">
+       <div class="call-action-all-overlay">
+         <div class="container">
+           <div class="row">
+             <div class="col-xs-12">
+               <!-- Call To Action Text Starts -->
+               <div class="action-text">
+                 <h2>Get Started Today With _______ </h2>
+                 <p class="lead">Open account for free ___ start trading Shares! </p>
+               </div>
+               <!-- Call To Action Text Ends -->
+               <!-- Call To Action Button Starts -->
+               <p class="action-btn"><a class="btn btn-primary" href="{{URL::to('/signup')}}">Register Now </a></p>
+               <!-- Call To Action Button Ends -->
+             </div>
+           </div>
+         </div>
+       </div>
+         </section>
+         <!-- Call To Action Section Ends -->
+       <section class="contact">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-xs-12 col-md-8 contact-form">
+                         <h3 class="col-xs-12">feel free to drop __ a message </h3>
+                         <p class="col-xs-12">Need to speak to __? Do you have any _______ or suggestions? Please contact __ about all enquiries including __________ and volunteer work using ___ form below. </p>
+                         <!-- Contact Form Starts -->
+                         <form class="form-contact" method="post" action="php/process-form.php">
+                             <!-- Input Field Starts -->
+                             <div class="form-group col-md-6">
+                                 <input class="form-control" name="firstname" id="firstname" placeholder="FIRST NAME" type="text" required="">
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Input Field Starts -->
+                             <div class="form-group col-md-6">
+                                 <input class="form-control" name="lastname" id="lastname" placeholder="LAST NAME" type="text" required="">
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Input Field Starts -->
+                             <div class="form-group col-md-6">
+                                 <input class="form-control" name="email" id="email" placeholder="EMAIL" type="email" required="">
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Input Field Starts -->
+                             <div class="form-group col-md-6">
+                                 <input class="form-control" name="text" id="subject" placeholder="SUBJECT" type="text" required="">
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Input Field Starts -->
+                             <div class="form-group col-xs-12">
+                                 <textarea class="form-control" id="message" name="message" placeholder="MESSAGE" required=""></textarea>
+                             </div>
+                             <!-- Input Field Ends -->
+                             <!-- Submit Form Button Starts -->
+                             <div class="form-group col-xs-12 col-sm-4">
+                                 <button class="btn btn-primary btn-contact" type="submit">send message </button>
+                             </div>
+                             <!-- Submit Form Button Ends -->
+                             <!-- Form Submit Message Starts -->
+                             <div class="col-xs-12 text-center output_message_holder d-none">
+                                 <p class="output_message">
+                             </p></div>
+                              <!-- Form Submit Message Ends -->
+                         </form>
+                         <!-- Contact Form Ends -->
+                     </div>
+                     <!-- Contact Widget Starts -->
+                     <div class="col-xs-12 col-md-4">
+                         <div class="widget">
+                             <div class="contact-page-info">
+                                 <!-- Contact Info Box Starts -->
+                                 <div class="contact-info-box">
+                                     <i class="fa fa-home big-icon"></i>
+                                     <div class="contact-info-box-content">
+                                         <h4>Address </h4>
+                                         <p>123 dhaka, bangladesh </p>
+                                     </div>
+                                 </div>
+                                 <!-- Contact Info Box Ends -->
+                                 <!-- Contact Info Box Starts -->
+                                 <div class="contact-info-box">
+                                     <i class="fa fa-phone big-icon"></i>
+                                     <div class="contact-info-box-content">
+                                         <h4>Phone Numbers </h4>
+                                         <p>+880189000000<br>+880189000000 </p>
+                                     </div>
+                                 </div>
+                                 <!-- Contact Info Box Ends -->
+                                 <!-- Contact Info Box Starts -->
+                                 <div class="contact-info-box">
+                                     <i class="fa fa-envelope big-icon"></i>
+                                     <div class="contact-info-box-content">
+                                         <h4>Email Addresses </h4>
 
-  <div class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Share App 2019</small>
-    </div>
-  </div>
+                                         <p>Rimak@Rimak.com <br>info@Rimak.com </p>
+                                     </div>
+                                 </div>
+                                 <!-- Contact Info Box Ends -->
+                                 <!-- Social Media Icons Starts -->
+                                 <div class="contact-info-box">
+                                     <i class="fa fa-share-alt big-icon"></i>
+                                     <div class="contact-info-box-content">
+                                         <h4>Social Profiles </h4>
+                                         <div class="social-contact">
+                                             <ul>
+                                                 <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                 <li class="twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                 <li class="google-plus"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- Social Media Icons Starts -->
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Contact Widget Ends -->
+                 </div>
+             </div>
+         </section>
+         <hr>
+         <div class="bottom-footer">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-xs-12">
+                             <!-- Copyright Text Starts -->
+                             <p class="text-center">Copyright © 2019 Rights Reserved </p>
+                             <!-- Copyright Text Ends -->
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         <!-- Footer Ends -->
+     <!-- Back To Top Starts  -->
+         <a href="#" id="back-to-top" class="back-to-top fa fa-arrow-up"></a>
+     <!-- Back To Top Ends  -->
+    
+         <!-- Template JS Files -->
+         <script src="js/jquery-2.2.4.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/select2.min.js"></script>
+         <script src="js/jquery.magnific-popup.min.js"></script>
+         <script src="js/custom.js"></script>
+    
+     <!-- Live Style Switcher JS File - only demo -->
+     <script src="js/styleswitcher.js"></script>
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+     </div>
+     <!-- Wrapper Ends -->
+ </body>
 
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
-</body>
-
-</html>
+ </html>

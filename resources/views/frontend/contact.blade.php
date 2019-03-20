@@ -95,7 +95,7 @@
                              <!-- Main Menu Starts -->
                              <ul class="nav navbar-nav">
                                  <li class="active"><a href="{{URL::to('/')}}">Home </a></li>
-                                 <li><a href="{{URL::to('/about')}}">About Us </a></li>
+                                 <li><a href="{{URL::to('/about')}}">Contact Us </a></li>
                                
                                 <!--  <li class="dropdown">
                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">pages  <i class="fa fa-angle-down"></i></a>
@@ -131,107 +131,33 @@
              </nav>
              <!-- Navigation Menu Ends -->
          </header>
-         <!-- Header Ends -->
-     <!-- Banner Area Starts -->
-     <section class="banner-area" style="background-image: url(img/backgrounds/bg-banner.jpg);">
-       <div class="banner-overlay">
-         <div class="banner-text text-center">
-           <div class="container">
-             <!-- Section Title Starts -->
-             <div class="row text-center">
-               <div class="col-xs-12">
-                 <!-- Title Starts -->
-                 <h2 class="title-head">  <span>Guest Browse </span></h2>
-                 <!-- Title Ends -->
-                 <hr />
-                 <!-- Breadcrumb Starts -->
-                 <ul class="breadcrumb">
-                   <li><a href="{{URL::to('/')}}"> home </a></li>
-                   <li>Guest browse </li>
-                 </ul>
-                 <!-- Breadcrumb Ends -->
-               </div>
+
+        <section class="banner-area" style="background-image: url(img/backgrounds/bg-banner.jpg);">
+             <div class="banner-overlay">
+                 <div class="banner-text text-center">
+                     <div class="container">
+                         <!-- Section Title Starts -->
+                         <div class="row text-center">
+                             <div class="col-xs-12">
+                                 <!-- Title Starts -->
+                                 <h2 class="title-head">Contact  <span>Us </span></h2>
+                                 <!-- Title Ends -->
+                                 <hr>
+                                 <!-- Breadcrumb Starts -->
+                                 <ul class="breadcrumb">
+                                     <li><a href="{{URL::to('/')}}"> home </a></li>
+                                     <li>Contact </li>
+                                 </ul>
+                                 <!-- Breadcrumb Ends -->
+                             </div>
+                         </div>
+                         <!-- Section Title Ends -->
+                     </div>
+                 </div>
              </div>
-             <!-- Section Title Ends -->
-           </div>
-         </div>
-       </div>
-     </section>
-     <!-- Banner Area Ends -->
-     <!-- Section Services Starts -->
-         <section class="services">
-       <div class="container">
-
-         <div class="row">
-           <!-- Service Box Starts -->
-                    <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Question No One </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
-                     </div>
-
-
-                     <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Share Investment </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
-                     </div>
-
-
-                     <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Share Investment </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
-                     </div>
-
-
-                     <div class="col-md-8 service-box">
-                         <div>
-                             <img id="payment-options" src="img/icons/orange/payment-options.png" alt="payment options" />
-                             <div class="service-box-content">
-                                 <h3>Share Investment </h3>
-                                 <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit, sed __ eiusmod tempor incididunt ut ______ et dolore magna aliqua. __ enim ad minim veniam </p>
-                             </div>
-                         </div>
-                     </div>   
-         </div>
-       </div>
-     </section>
-     <!-- Section Services Ends -->
-         <!-- Call To Action Section Starts -->
-         <section class="call-action-all" style="background: url(img/backgrounds/call-to-action-bg.jpg);">
-       <div class="call-action-all-overlay">
-         <div class="container">
-           <div class="row">
-             <div class="col-xs-12">
-               <!-- Call To Action Text Starts -->
-               <div class="action-text">
-                 <h2>Get Started Today With _______ </h2>
-                 <p class="lead">Open account for free ___ start trading Shares! </p>
-               </div>
-               <!-- Call To Action Text Ends -->
-               <!-- Call To Action Button Starts -->
-               <p class="action-btn"><a class="btn btn-primary" href="{{URL::to('/signup')}}">Register Now </a></p>
-               <!-- Call To Action Button Ends -->
-             </div>
-           </div>
-         </div>
-       </div>
          </section>
-         <!-- Call To Action Section Ends -->
-       <section class="contact">
+
+          <section class="contact">
              <div class="container">
                  <div class="row">
                      <div class="col-xs-12 col-md-8 contact-form">
